@@ -6,12 +6,16 @@ import UnoCSS from 'unocss/vite';
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
+import qiankun from 'vite-plugin-qiankun';
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
     plugins: [
         vue(),
         UnoCSS(),
+        qiankun('settle-fe', {
+            useDevMode: mode === 'dev',
+        }),
         AutoImport({
             resolvers: [ElementPlusResolver()],
             imports: ['vue', 'vue/macros', 'vue-router', 'pinia'],
@@ -36,6 +40,7 @@ export default defineConfig({
         },
     },
     server: {
+        port: 4000,
         proxy: {
             '/api': {
                 target: 'http://localhost:3000',
@@ -44,4 +49,5 @@ export default defineConfig({
             },
         },
     },
-});
+    base: 'http://localhost:3000/',
+}));

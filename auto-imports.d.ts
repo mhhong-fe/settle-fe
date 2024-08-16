@@ -40,7 +40,7 @@ declare global {
   const defineComponent: typeof import('vue')['defineComponent']
   const defineStore: typeof import('pinia')['defineStore']
   const effectScope: typeof import('vue')['effectScope']
-  const envD: typeof import('./env.d')['default']
+  const envD: typeof import('./env')['default']
   const eslintConfig: typeof import('./eslint.config.mjs')['default']
   const getActivePinia: typeof import('pinia')['getActivePinia']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']

@@ -1,6 +1,6 @@
 <template>
     <div class="w-100vw h-100vh">
-        <h2>Vue Template</h2>
+        <div>子应用Home页面</div>
         <RouterView />
     </div>
 </template>

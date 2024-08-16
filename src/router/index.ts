@@ -10,7 +10,8 @@ const routes = [
 ];
 
 const router = createRouter({
-    history: createWebHistory(),
+    // 这个值可以从基座传下来
+    history: createWebHistory('fe'),
     routes,
 });
 
