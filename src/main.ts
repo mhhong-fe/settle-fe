@@ -12,6 +12,8 @@ let app: App<Element>;
 
 let errorHandle;
 
+console.log('settle ------------------');
+
 function render(base?: string) {
     app = createApp(AppVue);
     if (errorHandle) {

@@ -49,5 +49,4 @@ export default defineConfig(({ mode }) => ({
             },
         },
     },
-    base: 'http://localhost:3000/',
 }));
