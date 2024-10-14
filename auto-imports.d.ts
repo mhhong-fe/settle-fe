@@ -129,7 +129,6 @@ declare module 'vue' {
     readonly API_GET_USER_INFO: UnwrapRef<typeof import('./src/api/config/common')['API_GET_USER_INFO']>
     readonly API_UPDATE_USER_INFO: UnwrapRef<typeof import('./src/api/config/common')['API_UPDATE_USER_INFO']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
-    readonly ElMessage: UnwrapRef<typeof import('element-plus/es')['ElMessage']>
     readonly GENDER: UnwrapRef<typeof import('./src/enums/settle')['GENDER']>
     readonly acceptHMRUpdate: UnwrapRef<typeof import('pinia')['acceptHMRUpdate']>
     readonly axiosIns: UnwrapRef<typeof import('./src/api/index')['axiosIns']>
@@ -217,7 +216,6 @@ declare module '@vue/runtime-core' {
     readonly API_GET_USER_INFO: UnwrapRef<typeof import('./src/api/config/common')['API_GET_USER_INFO']>
     readonly API_UPDATE_USER_INFO: UnwrapRef<typeof import('./src/api/config/common')['API_UPDATE_USER_INFO']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
-    readonly ElMessage: UnwrapRef<typeof import('element-plus/es')['ElMessage']>
     readonly GENDER: UnwrapRef<typeof import('./src/enums/settle')['GENDER']>
     readonly acceptHMRUpdate: UnwrapRef<typeof import('pinia')['acceptHMRUpdate']>
     readonly axiosIns: UnwrapRef<typeof import('./src/api/index')['axiosIns']>

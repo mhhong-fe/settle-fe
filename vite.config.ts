@@ -40,13 +40,6 @@ export default defineConfig(({ mode }) => ({
         },
     },
     server: {
-        port: 4000,
-        proxy: {
-            '/api': {
-                target: 'http://localhost:3000',
-                changeOrigin: true,
-                rewrite: path => path.replace(/^\/api/, ''), // 可选: 修改路径
-            },
-        },
+        port: 4001,
     },
 }));
